@@ -117,7 +117,7 @@
     "missing-translations": "node scripts/missing-translations.js",
     "postinstall": "typechain --target ethers-v5 \"src/constants/abis/*.json\"",
     "prepare": "husky install",
-    "start": "GENERATE_SOURCEMAP=false REACT_APP_GIT_SHA=`git rev-parse --short HEAD` react-scripts -r @cypress/instrument-cra start",
+    "start": "react-scripts -r @cypress/instrument-cra start",
     "storybook": "start-storybook -p 6006 -s public",
     "test": "react-scripts test"
   },

@@ -96,7 +96,6 @@ function TopMenu(): ReactElement {
             justifyContent="flex-end"
             alignItems="center"
           >
-            <SDLPrice sdlPrice={sdlPrice} />
             <RewardsButton setCurrentModal={setCurrentModal} />
             <Box display={isUnderLaptopSize ? "none" : "block"}>
               <Web3Status />

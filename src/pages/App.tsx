@@ -61,32 +61,30 @@ export default function App(): ReactElement {
               <TokensProvider>
                 <ExpandedPoolsProvider>
                   <UserStateProvider>
-                    <PricesAndVoteData>
-                      <PendingSwapsProvider>
-                        <AprsProvider>
-                          <RewardsBalancesProvider>
-                            <LocalizationProvider dateAdapter={AdapterDateFns}>
-                              <AppContainer>
-                                <TopMenu />
-                                <Suspense fallback={null}>
-                                  <Pages />
-                                </Suspense>
-                                <WrongNetworkModal />
-                                <Version />
-                                <ToastContainer
-                                  theme={
-                                    theme.palette.mode === "dark"
-                                      ? "dark"
-                                      : "light"
-                                  }
-                                  position="top-left"
-                                />
-                              </AppContainer>
-                            </LocalizationProvider>
-                          </RewardsBalancesProvider>
-                        </AprsProvider>
-                      </PendingSwapsProvider>
-                    </PricesAndVoteData>
+                    <PendingSwapsProvider>
+                      <AprsProvider>
+                        <RewardsBalancesProvider>
+                          <LocalizationProvider dateAdapter={AdapterDateFns}>
+                            <AppContainer>
+                              <TopMenu />
+                              <Suspense fallback={null}>
+                                <Pages />
+                              </Suspense>
+                              <WrongNetworkModal />
+                              <Version />
+                              <ToastContainer
+                                theme={
+                                  theme.palette.mode === "dark"
+                                    ? "dark"
+                                    : "light"
+                                }
+                                position="top-left"
+                              />
+                            </AppContainer>
+                          </LocalizationProvider>
+                        </RewardsBalancesProvider>
+                      </AprsProvider>
+                    </PendingSwapsProvider>
                   </UserStateProvider>
                 </ExpandedPoolsProvider>
               </TokensProvider>

@@ -413,7 +413,27 @@ export async function getMulticallProvider(
     }
   } else if (chainId === ChainId.AURORA) {
     ethcallProvider.multicall3 = {
-      address: "0xcA11bde05977b3631167028862bE2a173976CA11",
+      address: "0x52c487274043402a493454BD1bc65be9eFF46ed7",
+      block: 0,
+    }
+  } else if (chainId === ChainId.MANTLE) {
+    ethcallProvider.multicall3 = {
+      address: "0xEE589EC00c4320f24fcb2a49d1D5f8f256fBB0f5",
+      block: 0,
+    }
+  } else if (chainId === ChainId.NEON) {
+    ethcallProvider.multicall3 = {
+      address: "0x18f224444CC28e6D74EC193B34be27A69Dce0b66",
+      block: 0,
+    }
+  } else if (chainId === ChainId.SCROLL) {
+    ethcallProvider.multicall3 = {
+      address: "0xEE589EC00c4320f24fcb2a49d1D5f8f256fBB0f5",
+      block: 0,
+    }
+  } else if (chainId === ChainId.SEPOLIA) {
+    ethcallProvider.multicall3 = {
+      address: "0x5b6d1B8Ca3Ec051d5Fb65A13087Da152D7dFEF4c",
       block: 0,
     }
   }
