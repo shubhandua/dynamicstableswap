@@ -21,6 +21,8 @@ export enum ChainId {
   NEON = 245022926,
   SCROLL = 534353,
   SEPOLIA = 11155111,
+  METIS = 599,
+  BASE = 84531,
 }
 
 export const NETWORK_LABEL: Partial<Record<ChainId, string>> = {
@@ -40,6 +42,8 @@ export const NETWORK_LABEL: Partial<Record<ChainId, string>> = {
   [ChainId.NEON]: "Neon EVM",
   [ChainId.SCROLL]: "Scroll L2 Alpha",
   [ChainId.SEPOLIA]: "Sepolia",
+  [ChainId.METIS]: "Metis Testnet",
+  [ChainId.BASE]: "Base Goerli",
 }
 
 // TODO: figure out better way of representing non-erc20 native tokens
@@ -61,6 +65,8 @@ export const NETWORK_NATIVE_TOKENS: Record<ChainId, string> = {
   [ChainId.NEON]: "NEON",
   [ChainId.SCROLL]: "ETH",
   [ChainId.SEPOLIA]: "ETH",
+  [ChainId.METIS]: "ETH",
+  [ChainId.BASE]: "ETH",
 }
 export const COINGECKO_PLATFORM_ID: Record<ChainId, string | null> = {
   [ChainId.MAINNET]: "ethereum",
@@ -81,6 +87,8 @@ export const COINGECKO_PLATFORM_ID: Record<ChainId, string | null> = {
   [ChainId.NEON]: null,
   [ChainId.SCROLL]: null,
   [ChainId.SEPOLIA]: null,
+  [ChainId.METIS]: null,
+  [ChainId.BASE]: null,
 }
 
 export type SupportedNetwork = {
@@ -165,6 +173,17 @@ export const SUPPORTED_NETWORKS: SupportedNetworks = {
     rpcUrls: ["https://testnet.aurora.dev"],
     blockExplorerUrls: ["https://explorer.testnet.aurora.dev"],
   },
+  [ChainId.BASE]: {
+    chainId: "0x14A33",
+    chainName: "Base Testnet",
+    nativeCurrency: {
+      name: "ETH",
+      symbol: "eth",
+      decimals: 18,
+    },
+    rpcUrls: ["https://goerli.base.org"],
+    blockExplorerUrls: ["https://goerli.basescan.org/"],
+  },
   [ChainId.GOERLI]: {
     chainId: "0x5",
     chainName: "goerli",
@@ -186,6 +205,17 @@ export const SUPPORTED_NETWORKS: SupportedNetworks = {
     },
     rpcUrls: ["https://rpc.testnet.mantle.xyz"],
     blockExplorerUrls: ["https://evm.evmos.dev"],
+  },
+  [ChainId.METIS]: {
+    chainId: "0x257",
+    chainName: "Metis Testnet",
+    nativeCurrency: {
+      name: "ETH",
+      symbol: "eth",
+      decimals: 18,
+    },
+    rpcUrls: ["https://goerli.gateway.metisdevops.link"],
+    blockExplorerUrls: ["https://goerli.explorer.metisdevops.link/"],
   },
   [ChainId.NEON]: {
     chainId: "0xE9AC0CE",
