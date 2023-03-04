@@ -58,7 +58,7 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
-    "@babel/core": "^7.16.5",
+    "@babel/core": "^7.21.0",
     "@cypress/code-coverage": "^3.9.12",
     "@cypress/instrument-cra": "^1.4.0",
     "@ethersproject/experimental": "^5.0.9",
