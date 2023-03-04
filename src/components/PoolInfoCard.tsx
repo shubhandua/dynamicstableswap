@@ -121,7 +121,7 @@ function PoolInfoCard({ data }: Props): ReactElement | null {
           <Typography component="span" variant="h1" mr={1}>
             {formattedData.name}
           </Typography>
-          {!data.isSaddleApproved && (
+          {!data.isDynamicStableswapApproved && (
             <Chip
               variant="filled"
               size="small"

@@ -235,7 +235,7 @@ const PendingSwapModal = ({
             <Box display="flex" alignItems="center">
               <InfoIcon sx={{ mr: 1 }} />
               <Link
-                href="https://docs.saddle.finance/saddle-faq#what-is-virtual-swap"
+                href="https://docs.DynamicStableswap.finance/DynamicStableswap-faq#what-is-virtual-swap"
                 target="_blank"
                 rel="noreferrer"
               >

@@ -58,7 +58,7 @@ export default function CreatePool(): React.ReactElement {
     .filter((pool) => {
       return (
         pool.tokens.length < 4 &&
-        pool.isSaddleApproved &&
+        pool.isDynamicStableswapApproved &&
         !pool.basePoolAddress &&
         !pool.isMigrated &&
         !pool.isPaused
@@ -67,7 +67,7 @@ export default function CreatePool(): React.ReactElement {
     .map((pool) => ({
       basePoolAddress: pool.basePoolAddress,
       poolName: pool.poolName,
-      isSaddleApproved: pool.isSaddleApproved,
+      isDynamicStableswapApproved: pool.isDynamicStableswapApproved,
       address: pool.poolAddress,
       isPaused: pool.isPaused,
       isMigrated: pool.isMigrated,

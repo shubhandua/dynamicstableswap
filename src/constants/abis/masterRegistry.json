@@ -125,7 +125,7 @@
   },
   {
     "inputs": [],
-    "name": "SADDLE_MANAGER_ROLE",
+    "name": "DynamicStableswap_MANAGER_ROLE",
     "outputs": [
       {
         "internalType": "bytes32",

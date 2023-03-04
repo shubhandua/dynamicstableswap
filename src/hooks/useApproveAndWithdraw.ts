@@ -80,7 +80,7 @@ export function useApproveAndWithdraw(
         throw new Error("Swap contract is not loaded")
       if (state.lpTokenAmountToSpend.isZero()) return
 
-      const withdrawTokens = // When pool is MetaSwap pool, it includes LP token and other token ex: ["wCUSD","saddleUSD-V2"]
+      const withdrawTokens = // When pool is MetaSwap pool, it includes LP token and other token ex: ["wCUSD","DynamicStableswapUSD-V2"]
         !basicPool.isMetaSwap || shouldWithdrawWrapped
           ? basicPool.tokens
           : basicPool.underlyingTokens // If pool is not MetaSwap pool, this value is empty

@@ -8,7 +8,7 @@
       },
       {
         "internalType": "contract IERC20",
-        "name": "tbtcSaddleLPToken",
+        "name": "tbtcDynamicStableswapLPToken",
         "type": "address"
       }
     ],

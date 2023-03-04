@@ -81,8 +81,8 @@ jobs:
       REACT_APP_NOTIFY_DAPP_ID: ${{ secrets.REACT_APP_NOTIFY_DAPP_ID }}
     runs-on: ubuntu-latest
     services:
-      saddle-contract:
-        image: saddlefinance/contracts:latest
+      DynamicStableswap-contract:
+        image: DynamicStableswapfinance/contracts:latest
         ports:
           - 8545:8545
     steps:

@@ -71,8 +71,8 @@ interface Transaction {
 }
 
 export default function Transactions(): ReactElement {
-  const SADDLE_SUBGRAPH_URL =
-    "https://api.thegraph.com/subgraphs/name/saddle-finance/saddle"
+  const DynamicStableswap_SUBGRAPH_URL =
+    "https://api.thegraph.com/subgraphs/name/DynamicStableswap-finance/DynamicStableswap"
   const { t } = useTranslation()
   const theme = useTheme()
   const basicPools = useContext(BasicPoolsContext)
@@ -121,7 +121,7 @@ export default function Transactions(): ReactElement {
       }
     `
 
-    await fetch(SADDLE_SUBGRAPH_URL, {
+    await fetch(DynamicStableswap_SUBGRAPH_URL, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ query }),

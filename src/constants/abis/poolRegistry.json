@@ -79,7 +79,7 @@
           },
           {
             "internalType": "bool",
-            "name": "isSaddleApproved",
+            "name": "isDynamicStableswapApproved",
             "type": "bool"
           },
           {
@@ -166,7 +166,7 @@
           },
           {
             "internalType": "bool",
-            "name": "isSaddleApproved",
+            "name": "isDynamicStableswapApproved",
             "type": "bool"
           },
           {
@@ -347,7 +347,7 @@
           },
           {
             "internalType": "bool",
-            "name": "isSaddleApproved",
+            "name": "isDynamicStableswapApproved",
             "type": "bool"
           },
           {
@@ -398,7 +398,7 @@
   },
   {
     "inputs": [],
-    "name": "SADDLE_APPROVED_POOL_OWNER_ROLE",
+    "name": "DynamicStableswap_APPROVED_POOL_OWNER_ROLE",
     "outputs": [
       {
         "internalType": "bytes32",
@@ -411,7 +411,7 @@
   },
   {
     "inputs": [],
-    "name": "SADDLE_MANAGER_ROLE",
+    "name": "DynamicStableswap_MANAGER_ROLE",
     "outputs": [
       {
         "internalType": "bytes32",
@@ -473,7 +473,7 @@
           },
           {
             "internalType": "bool",
-            "name": "isSaddleApproved",
+            "name": "isDynamicStableswapApproved",
             "type": "bool"
           },
           {
@@ -528,7 +528,7 @@
           },
           {
             "internalType": "bool",
-            "name": "isSaddleApproved",
+            "name": "isDynamicStableswapApproved",
             "type": "bool"
           },
           {
@@ -704,7 +704,7 @@
           },
           {
             "internalType": "bool",
-            "name": "isSaddleApproved",
+            "name": "isDynamicStableswapApproved",
             "type": "bool"
           },
           {
@@ -785,7 +785,7 @@
           },
           {
             "internalType": "bool",
-            "name": "isSaddleApproved",
+            "name": "isDynamicStableswapApproved",
             "type": "bool"
           },
           {
@@ -866,7 +866,7 @@
           },
           {
             "internalType": "bool",
-            "name": "isSaddleApproved",
+            "name": "isDynamicStableswapApproved",
             "type": "bool"
           },
           {
@@ -1294,7 +1294,7 @@
           },
           {
             "internalType": "bool",
-            "name": "isSaddleApproved",
+            "name": "isDynamicStableswapApproved",
             "type": "bool"
           },
           {

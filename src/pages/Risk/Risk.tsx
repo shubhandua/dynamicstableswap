@@ -13,7 +13,7 @@ function Risk(): ReactElement {
       </Typography>
       <Typography variant="body1" data-testid="risk-intro">
         {t("riskIntro")}{" "}
-        <Link href="https://github.com/saddle-finance/saddle-contract">
+        <Link href="https://github.com/DynamicStableswap-finance/DynamicStableswap-contract">
           {t("riskIntro2")}
         </Link>{" "}
         {t("riskIntro3")}
@@ -23,7 +23,7 @@ function Risk(): ReactElement {
       </Typography>
       <Typography variant="body1" data-testid="risk-audits">
         {t("riskAudits")}{" "}
-        <Link href="https://github.com/saddle-finance/saddle-audits">
+        <Link href="https://github.com/DynamicStableswap-finance/DynamicStableswap-audits">
           {t("riskAudits2")}
         </Link>
         {"."}

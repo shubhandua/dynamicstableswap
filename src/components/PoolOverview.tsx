@@ -71,7 +71,7 @@ export default function PoolOverview({
     if (poolData.isPaused) {
       labels = [...labels, "PAUSED"]
     }
-    if (!poolData.isSaddleApproved) {
+    if (!poolData.isDynamicStableswapApproved) {
       labels = [...labels, "COMMUNITY"]
     }
 
@@ -84,7 +84,7 @@ export default function PoolOverview({
         color={
           poolData.isGuarded || shouldMigrate
             ? "secondary"
-            : !poolData.isSaddleApproved
+            : !poolData.isDynamicStableswapApproved
             ? "info"
             : "error"
         }
@@ -194,7 +194,7 @@ export default function PoolOverview({
             <Box sx={{ display: "flex", alignItems: "center" }}>
               <Typography variant="subtitle1" mr={1}>
                 <Link
-                  href="https://blog.saddle.finance/introducing-sdl"
+                  href="https://blog.DynamicStableswap.finance/introducing-sdl"
                   target="_blank"
                   rel="noreferrer"
                   sx={{ textDecoration: "underline" }}

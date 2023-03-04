@@ -67,7 +67,7 @@ export default function useWithdrawFormState(poolName: string) {
     return null
   }, [library, account, poolData?.poolAddress])
 
-  // When pool is MetaSwap pool, it includes LP token and other token ex: ["wCUSD","saddleUSD-V2"]
+  // When pool is MetaSwap pool, it includes LP token and other token ex: ["wCUSD","DynamicStableswapUSD-V2"]
   const withdrawTokens =
     !poolData.isMetaSwap || shouldWithdrawWrapped
       ? userShareData.tokens

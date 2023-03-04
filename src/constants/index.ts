@@ -40,7 +40,7 @@ export const FTM_USD_POOL_NAME = "ftmUSD"
 export const EVMOS_TESTNET_POOL_NAME = "evmosTestnetUSD"
 export const EVMOS_POOL_NAME = "evmosUSD"
 export const KAVA_TESTNET_USD_POOL_NAME = "kavaTestnetUSD"
-export const KAVA_USD_POOL_NAME = "Saddle3Pool"
+export const KAVA_USD_POOL_NAME = "DynamicStableswap3Pool"
 export const TBTC_EVMOS_BTC_METAPOOL_NAME = "tbtc-evmosBTC Meta"
 export const EVMOS_4_POOL_NAME = "Evmos 4Pool"
 export const EVMOS_FRAX_3_POOL_NAME = "Evmos Frax 3Pool"
@@ -732,8 +732,8 @@ export const SDL_TOKEN = new Token(
   SDL_TOKEN_ADDRESSES,
   18,
   "SDL",
-  "saddle-finance", // Updated per CoinGecko
-  "Saddle DAO",
+  "DynamicStableswap-finance", // Updated per CoinGecko
+  "DynamicStableswap DAO",
   false,
   false,
 )
@@ -741,9 +741,9 @@ export const SDL_TOKEN = new Token(
 export const SUSD_SWAP_TOKEN = new Token(
   SUSD_SWAP_TOKEN_CONTRACT_ADDRESSES,
   18,
-  "saddleSUSD",
-  "saddlesusd",
-  "Saddle sUSD/saddleUSD-V2",
+  "DynamicStableswapSUSD",
+  "DynamicStableswapsusd",
+  "DynamicStableswap sUSD/DynamicStableswapUSD-V2",
   false,
   true,
 )
@@ -751,9 +751,9 @@ export const SUSD_SWAP_TOKEN = new Token(
 export const SUSD_SWAP_V2_TOKEN = new Token(
   SUSD_SWAP_TOKEN_V2_CONTRACT_ADDRESSES,
   18,
-  "saddleSUSD-V2",
-  "saddlesusd-v2",
-  "Saddle sUSD/saddleUSD-V2 V2",
+  "DynamicStableswapSUSD-V2",
+  "DynamicStableswapsusd-v2",
+  "DynamicStableswap sUSD/DynamicStableswapUSD-V2 V2",
   false,
   true,
 )
@@ -761,9 +761,9 @@ export const SUSD_SWAP_V2_TOKEN = new Token(
 export const SUSD_SWAP_V2_V3_TOKEN = new Token(
   SUSD_SWAP_TOKEN_V3_CONTRACT_ADDRESSES,
   18,
-  "saddleSUSD-V2-V3",
-  "saddlesusd-v2-v3",
-  "Saddle sUSD/saddleUSD-V2 V3",
+  "DynamicStableswapSUSD-V2-V3",
+  "DynamicStableswapsusd-v2-v3",
+  "DynamicStableswap sUSD/DynamicStableswapUSD-V2 V3",
   false,
   true,
 )
@@ -771,9 +771,9 @@ export const SUSD_SWAP_V2_V3_TOKEN = new Token(
 export const BTC_SWAP_TOKEN = new Token(
   BTC_SWAP_TOKEN_CONTRACT_ADDRESSES,
   18,
-  "saddleBTC",
-  "saddlebtc",
-  "Saddle TBTC/WBTC/RENBTC/SBTC",
+  "DynamicStableswapBTC",
+  "DynamicStableswapbtc",
+  "DynamicStableswap TBTC/WBTC/RENBTC/SBTC",
   false,
   true,
 )
@@ -781,9 +781,9 @@ export const BTC_SWAP_TOKEN = new Token(
 export const BTC_SWAP_V2_TOKEN = new Token(
   BTC_SWAP_V2_TOKEN_CONTRACT_ADDRESSES,
   18,
-  "saddleBTC-V2",
-  "saddlebtc-v2",
-  "Saddle WBTC/RENBTC/SBTC",
+  "DynamicStableswapBTC-V2",
+  "DynamicStableswapbtc-v2",
+  "DynamicStableswap WBTC/RENBTC/SBTC",
   false,
   true,
 )
@@ -791,9 +791,9 @@ export const BTC_SWAP_V2_TOKEN = new Token(
 export const EVMOS_BTC_SWAP_TOKEN = new Token(
   EVMOS_BTC_SWAP_TOKEN_CONTRACT_ADDRESSES,
   18,
-  "saddleEvmosBTC",
-  "saddleevmosbtc",
-  "Saddle WBTC/RENBTC",
+  "DynamicStableswapEvmosBTC",
+  "DynamicStableswapevmosbtc",
+  "DynamicStableswap WBTC/RENBTC",
   false,
   true,
 )
@@ -801,9 +801,9 @@ export const EVMOS_BTC_SWAP_TOKEN = new Token(
 export const EVMOS_4_POOL_SWAP_TOKEN = new Token(
   EVMOS_4_POOL_SWAP_TOKEN_CONTRACT_ADDRESSES,
   18,
-  "saddleEvmos4pool",
-  "saddleevmos4pool",
-  "Saddle 4pool",
+  "DynamicStableswapEvmos4pool",
+  "DynamicStableswapevmos4pool",
+  "DynamicStableswap 4pool",
   false,
   true,
 )
@@ -811,9 +811,9 @@ export const EVMOS_4_POOL_SWAP_TOKEN = new Token(
 export const EVMOS_FRAX_3_POOL_SWAP_TOKEN = new Token(
   EVMOS_FRAX_3_POOL_SWAP_TOKEN_CONTRACT_ADDRESSES,
   18,
-  "saddleEvmosFrax3pool",
-  "saddleevmosfrax3pool",
-  "Saddle Frax 3pool",
+  "DynamicStableswapEvmosFrax3pool",
+  "DynamicStableswapevmosfrax3pool",
+  "DynamicStableswap Frax 3pool",
   false,
   true,
 )
@@ -821,9 +821,9 @@ export const EVMOS_FRAX_3_POOL_SWAP_TOKEN = new Token(
 export const FRAX_3_POOL_SWAP_TOKEN = new Token(
   FRAX_3_POOL_SWAP_TOKEN_CONTRACT_ADDRESSES,
   18,
-  "saddleFrax3pool",
-  "saddlefrax3pool",
-  "Saddle 3pool",
+  "DynamicStableswapFrax3pool",
+  "DynamicStableswapfrax3pool",
+  "DynamicStableswap 3pool",
   false,
   true,
 )
@@ -831,9 +831,9 @@ export const FRAX_3_POOL_SWAP_TOKEN = new Token(
 export const TBTC_SWAP_TOKEN = new Token(
   TBTC_SWAP_TOKEN_CONTRACT_ADDRESSES,
   18,
-  "saddletBTC",
-  "saddletBTC",
-  "Saddle tBTCv2/saddleWRenSBTC",
+  "DynamicStableswaptBTC",
+  "DynamicStableswaptBTC",
+  "DynamicStableswap tBTCv2/DynamicStableswapWRenSBTC",
   false,
   true,
 )
@@ -841,9 +841,9 @@ export const TBTC_SWAP_TOKEN = new Token(
 export const TBTC_SWAP_V2_TOKEN = new Token(
   TBTC_SWAP_TOKEN_V2_CONTRACT_ADDRESSES,
   18,
-  "saddletBTC-V2",
-  "saddletBTC-v2",
-  "Saddle tBTCv2/saddleWRenSBTC V2",
+  "DynamicStableswaptBTC-V2",
+  "DynamicStableswaptBTC-v2",
+  "DynamicStableswap tBTCv2/DynamicStableswapWRenSBTC V2",
   false,
   true,
 )
@@ -851,9 +851,9 @@ export const TBTC_SWAP_V2_TOKEN = new Token(
 export const TBTC_SWAP_V3_TOKEN = new Token(
   TBTC_SWAP_TOKEN_V3_CONTRACT_ADDRESSES,
   18,
-  "saddletBTC-V3",
-  "saddletBTC-v3",
-  "Saddle tBTCv2/saddleWRenSBTC V3",
+  "DynamicStableswaptBTC-V3",
+  "DynamicStableswaptBTC-v3",
+  "DynamicStableswap tBTCv2/DynamicStableswapWRenSBTC V3",
   false,
   true,
 )
@@ -861,9 +861,9 @@ export const TBTC_SWAP_V3_TOKEN = new Token(
 export const STABLECOIN_SWAP_TOKEN = new Token(
   STABLECOIN_SWAP_TOKEN_CONTRACT_ADDRESSES,
   18,
-  "saddleUSD",
-  "saddleusd",
-  "Saddle DAI/USDC/USDT",
+  "DynamicStableswapUSD",
+  "DynamicStableswapusd",
+  "DynamicStableswap DAI/USDC/USDT",
   false,
   true,
 )
@@ -871,9 +871,9 @@ export const STABLECOIN_SWAP_TOKEN = new Token(
 export const STABLECOIN_SWAP_V2_TOKEN = new Token(
   STABLECOIN_SWAP_V2_TOKEN_CONTRACT_ADDRESSES,
   18,
-  "saddleUSD-V2",
-  "saddleusd-v2",
-  "Saddle DAI/USDC/USDT V2",
+  "DynamicStableswapUSD-V2",
+  "DynamicStableswapusd-v2",
+  "DynamicStableswap DAI/USDC/USDT V2",
   false,
   true,
 )
@@ -881,9 +881,9 @@ export const STABLECOIN_SWAP_V2_TOKEN = new Token(
 export const WCUSD_SWAP_TOKEN = new Token(
   WCUSD_SWAP_TOKEN_CONTRACT_ADDRESSES,
   18,
-  "saddlewCUSD",
-  "saddlewcusd",
-  "Saddle wCUSD/saddleUSD-V2",
+  "DynamicStableswapwCUSD",
+  "DynamicStableswapwcusd",
+  "DynamicStableswap wCUSD/DynamicStableswapUSD-V2",
   false,
   true,
 )
@@ -891,9 +891,9 @@ export const WCUSD_SWAP_TOKEN = new Token(
 export const WCUSD_SWAP_V2_TOKEN = new Token(
   WCUSD_SWAP_TOKEN_V2_CONTRACT_ADDRESSES,
   18,
-  "saddlewCUSD-V2",
-  "saddlewcusd-v2",
-  "Saddle wCUSD/saddleUSD-V2 V2",
+  "DynamicStableswapwCUSD-V2",
+  "DynamicStableswapwcusd-v2",
+  "DynamicStableswap wCUSD/DynamicStableswapUSD-V2 V2",
   false,
   true,
 )
@@ -901,9 +901,9 @@ export const WCUSD_SWAP_V2_TOKEN = new Token(
 export const WCUSD_SWAP_V2_V3_TOKEN = new Token(
   WCUSD_SWAP_TOKEN_V3_CONTRACT_ADDRESSES,
   18,
-  "saddlewCUSD-V2_V3",
-  "saddlewcusd-v2-v3",
-  "Saddle wCUSD/saddleUSD-V2 V3",
+  "DynamicStableswapwCUSD-V2_V3",
+  "DynamicStableswapwcusd-v2-v3",
+  "DynamicStableswap wCUSD/DynamicStableswapUSD-V2 V3",
   false,
   true,
 )
@@ -911,9 +911,9 @@ export const WCUSD_SWAP_V2_V3_TOKEN = new Token(
 export const ARB_USD_SWAP_TOKEN = new Token(
   ARB_USD_SWAP_TOKEN_CONTRACT_ADDRESSES,
   18,
-  "saddleArbUSD",
-  "saddlearbUSD",
-  "Saddle nUSD/MIM/USDC/USDT",
+  "DynamicStableswapArbUSD",
+  "DynamicStableswaparbUSD",
+  "DynamicStableswap nUSD/MIM/USDC/USDT",
   false,
   true,
 )
@@ -921,9 +921,9 @@ export const ARB_USD_SWAP_TOKEN = new Token(
 export const FTM_USD_SWAP_TOKEN = new Token(
   FTM_USD_SWAP_TOKEN_CONTRACT_ADDRESSES,
   18,
-  "saddleFtmUSD",
-  "saddleftmUSD",
-  "Saddle FRAX/USDC",
+  "DynamicStableswapFtmUSD",
+  "DynamicStableswapftmUSD",
+  "DynamicStableswap FRAX/USDC",
   false,
   true,
 )
@@ -931,9 +931,9 @@ export const FTM_USD_SWAP_TOKEN = new Token(
 export const EVMOS_TESTNET_SWAP_TOKEN = new Token(
   EVMOS_TESTNET_4POOL_SWAP_TOKEN_CONTRACT_ADDRESSES,
   18,
-  "saddleEvmosUSD",
-  "saddleevmosUSD",
-  "Saddle EVMOS 4 Pool",
+  "DynamicStableswapEvmosUSD",
+  "DynamicStableswapevmosUSD",
+  "DynamicStableswap EVMOS 4 Pool",
   false,
   true,
 )
@@ -941,9 +941,9 @@ export const EVMOS_TESTNET_SWAP_TOKEN = new Token(
 export const EVMOS_SWAP_TOKEN = new Token(
   EVMOS_SWAP_TOKEN_CONTRACT_ADDRESSES,
   18,
-  "saddleEvmosUSD",
-  "saddleevmosUSD",
-  "Saddle DAI/USDC/USDT",
+  "DynamicStableswapEvmosUSD",
+  "DynamicStableswapevmosUSD",
+  "DynamicStableswap DAI/USDC/USDT",
   false,
   true,
 )
@@ -951,9 +951,9 @@ export const EVMOS_SWAP_TOKEN = new Token(
 export const USDC_USX_SWAP_TOKEN = new Token(
   USDC_USX_SWAP_TOKEN_CONTRACT_ADDRESSES,
   18,
-  "saddleUSX",
-  "saddleusdcUSX",
-  "Saddle USDC/USX LP Token",
+  "DynamicStableswapUSX",
+  "DynamicStableswapusdcUSX",
+  "DynamicStableswap USDC/USX LP Token",
   false,
   true,
 )
@@ -961,9 +961,9 @@ export const USDC_USX_SWAP_TOKEN = new Token(
 export const FRAX_USDC_SWAP_TOKEN = new Token(
   FRAX_USDC_SWAP_TOKEN_CONTRACT_ADDRESSES,
   18,
-  "saddleFraxUSD",
-  "saddlefraxUSD",
-  "Saddle USDC/FRAX LP Token",
+  "DynamicStableswapFraxUSD",
+  "DynamicStableswapfraxUSD",
+  "DynamicStableswap USDC/FRAX LP Token",
   false,
   true,
 )
@@ -971,9 +971,9 @@ export const FRAX_USDC_SWAP_TOKEN = new Token(
 export const FRAX_USDT_METAPOOL_TOKEN = new Token(
   FRAX_USDT_METAPOOL_TOKEN_CONTRACT_ADDRESSES,
   18,
-  "SaddleFraxUSDT",
-  "saddlefraxusdtmetapool",
-  "Saddle USDT/saddleFraxBP LP Token",
+  "DynamicStableswapFraxUSDT",
+  "DynamicStableswapfraxusdtmetapool",
+  "DynamicStableswap USDT/DynamicStableswapFraxBP LP Token",
   false,
   true,
 )
@@ -981,9 +981,9 @@ export const FRAX_USDT_METAPOOL_TOKEN = new Token(
 export const FRAX_SUSD_METAPOOL_TOKEN = new Token(
   FRAX_SUSD_METAPOOL_TOKEN_CONTRACT_ADDRESSES,
   18,
-  "SaddleFraxsUSD",
-  "saddlefraxsusdmetapool",
-  "Saddle sUSD/saddleFraxBP LP Token",
+  "DynamicStableswapFraxsUSD",
+  "DynamicStableswapfraxsusdmetapool",
+  "DynamicStableswap sUSD/DynamicStableswapFraxBP LP Token",
   true,
   true,
 )
@@ -991,9 +991,9 @@ export const FRAX_SUSD_METAPOOL_TOKEN = new Token(
 export const FRAX_ALUSD_METAPOOL_TOKEN = new Token(
   FRAX_ALUSD_METAPOOL_TOKEN_CONTRACT_ADDRESSES,
   18,
-  "SaddleFraxalUSD",
-  "saddlefraxalusdmetapool",
-  "Saddle alUSD/saddleFraxBP LP Token",
+  "DynamicStableswapFraxalUSD",
+  "DynamicStableswapfraxalusdmetapool",
+  "DynamicStableswap alUSD/DynamicStableswapFraxBP LP Token",
   false,
   true,
 )
@@ -1001,9 +1001,9 @@ export const FRAX_ALUSD_METAPOOL_TOKEN = new Token(
 export const ARB_FRAX_USDS_METAPOOL_TOKEN = new Token(
   ARB_FRAX_USDS_METAPOOL_TOKEN_CONTRACT_ADDRESSES,
   18,
-  "SaddleFraxUSDs",
-  "saddlefraxusdsmetapool",
-  "Saddle USDs/saddleFraxBP LP Token",
+  "DynamicStableswapFraxUSDs",
+  "DynamicStableswapfraxusdsmetapool",
+  "DynamicStableswap USDs/DynamicStableswapFraxBP LP Token",
   false,
   true,
 )
@@ -1011,9 +1011,9 @@ export const ARB_FRAX_USDS_METAPOOL_TOKEN = new Token(
 export const FTM_FRAX_USDT_METAPOOL_TOKEN = new Token(
   FTM_FRAX_USDT_METAPOOL_TOKEN_CONTRACT_ADDRESSES,
   18,
-  "SaddleFraxUSDT",
-  "saddlefraxusdtmetapool",
-  "Saddle USDT/saddleFraxBP LP Token",
+  "DynamicStableswapFraxUSDT",
+  "DynamicStableswapfraxusdtmetapool",
+  "DynamicStableswap USDT/DynamicStableswapFraxBP LP Token",
   false,
   true,
 )
@@ -1021,9 +1021,9 @@ export const FTM_FRAX_USDT_METAPOOL_TOKEN = new Token(
 export const FTM_FRAX_ALUSD_METAPOOL_TOKEN = new Token(
   FTM_FRAX_ALUSD_METAPOOL_TOKEN_CONTRACT_ADDRESSES,
   18,
-  "SaddleFraxalUSD",
-  "saddlefraxalusdmetapool",
-  "Saddle alUSD/saddleFraxBP LP Token",
+  "DynamicStableswapFraxalUSD",
+  "DynamicStableswapfraxalusdmetapool",
+  "DynamicStableswap alUSD/DynamicStableswapFraxBP LP Token",
   false,
   true,
 )
@@ -1031,9 +1031,9 @@ export const FTM_FRAX_ALUSD_METAPOOL_TOKEN = new Token(
 export const KAVA_TESTNET_USD_SWAP_TOKEN = new Token(
   KAVA_TESTNET_USD_SWAP_TOKEN_CONTRACT_ADDRESSES,
   18,
-  "saddleKavaUSD",
-  "saddlekavaUSD",
-  "Saddle USDC/USDT",
+  "DynamicStableswapKavaUSD",
+  "DynamicStableswapkavaUSD",
+  "DynamicStableswap USDC/USDT",
   false,
   true,
 )
@@ -1041,9 +1041,9 @@ export const KAVA_TESTNET_USD_SWAP_TOKEN = new Token(
 export const KAVA_USD_SWAP_TOKEN = new Token(
   KAVA_USD_SWAP_TOKEN_CONTRACT_ADDRESSES,
   18,
-  "saddle3Pool",
-  "saddle3Pool",
-  "Saddle USDC/USDT/DAI LP Token",
+  "DynamicStableswap3Pool",
+  "DynamicStableswap3Pool",
+  "DynamicStableswap USDC/USDT/DAI LP Token",
   false,
   true,
 )
@@ -1051,9 +1051,9 @@ export const KAVA_USD_SWAP_TOKEN = new Token(
 export const OPT_USD_SWAP_TOKEN = new Token(
   OPT_USD_SWAP_TOKEN_CONTRACT_ADDRESSES,
   18,
-  "saddleOptUSD",
-  "saddleoptUSD",
-  "Saddle DAI/USDC/USDT",
+  "DynamicStableswapOptUSD",
+  "DynamicStableswapoptUSD",
+  "DynamicStableswap DAI/USDC/USDT",
   false,
   true,
 )
@@ -1061,9 +1061,9 @@ export const OPT_USD_SWAP_TOKEN = new Token(
 export const FRAX_OPT_USD_SWAP_TOKEN = new Token(
   FRAX_OPT_USD_SWAP_TOKEN_CONTRACT_ADDRESSES,
   18,
-  "frax-saddleOptUSD",
-  "frax-saddleoptUSD",
-  "Saddle FRAX/saddleOptUsd",
+  "frax-DynamicStableswapOptUSD",
+  "frax-DynamicStableswapoptUSD",
+  "DynamicStableswap FRAX/DynamicStableswapOptUsd",
   false,
   true,
 )
@@ -1071,9 +1071,9 @@ export const FRAX_OPT_USD_SWAP_TOKEN = new Token(
 export const USDS_ARB_USD_SWAP_TOKEN = new Token(
   USDS_ARB_USD_SWAP_TOKEN_CONTRACT_ADDRESSES,
   18,
-  "usds-saddleArbUSD",
-  "usds-saddlearbUSD",
-  "Saddle USDS/saddleArbUsd",
+  "usds-DynamicStableswapArbUSD",
+  "usds-DynamicStableswaparbUSD",
+  "DynamicStableswap USDS/DynamicStableswapArbUsd",
   false,
   true,
 )
@@ -1081,9 +1081,9 @@ export const USDS_ARB_USD_SWAP_TOKEN = new Token(
 export const TBTC_EVMOS_BTC_SWAP_TOKEN = new Token(
   TBTC_EVMOS_BTC_SWAP_TOKEN_CONTRACT_ADDRESSES,
   18,
-  "tbtc-saddleEvmosBTC",
-  "tbtc-saddleevmosBTC",
-  "Saddle tBTCv2/saddleWRenBTC",
+  "tbtc-DynamicStableswapEvmosBTC",
+  "tbtc-DynamicStableswapevmosBTC",
+  "DynamicStableswap tBTCv2/DynamicStableswapWRenBTC",
   false,
   true,
 )
@@ -1091,9 +1091,9 @@ export const TBTC_EVMOS_BTC_SWAP_TOKEN = new Token(
 export const FRAX_ARB_USD_SWAP_V2_TOKEN = new Token(
   FRAX_ARB_USD_SWAP_V2_TOKEN_CONTRACT_ADDRESSES,
   18,
-  "saddleFraxArbUSD-V2",
-  "saddlefraxarbUSD-v2",
-  "Saddle FRAX/USDC/USDT",
+  "DynamicStableswapFraxArbUSD-V2",
+  "DynamicStableswapfraxarbUSD-v2",
+  "DynamicStableswap FRAX/USDC/USDT",
   false,
   true,
 )
@@ -1101,9 +1101,9 @@ export const FRAX_ARB_USD_SWAP_V2_TOKEN = new Token(
 export const VETH2_SWAP_TOKEN = new Token(
   VETH2_SWAP_TOKEN_CONTRACT_ADDRESSES,
   18,
-  "saddleVETH2",
-  "saddleveth2",
-  "Saddle WETH/vETH2",
+  "DynamicStableswapVETH2",
+  "DynamicStableswapveth2",
+  "DynamicStableswap WETH/vETH2",
   false,
   true,
 )
@@ -1111,9 +1111,9 @@ export const VETH2_SWAP_TOKEN = new Token(
 export const ALETH_SWAP_TOKEN = new Token(
   ALETH_SWAP_TOKEN_CONTRACT_ADDRESSES,
   18,
-  "saddleALETH",
-  "saddlealeth",
-  "Saddle WETH/alETH/sETH",
+  "DynamicStableswapALETH",
+  "DynamicStableswapaleth",
+  "DynamicStableswap WETH/alETH/sETH",
   false,
   true,
 )
@@ -1121,9 +1121,9 @@ export const ALETH_SWAP_TOKEN = new Token(
 export const D4_SWAP_TOKEN = new Token(
   D4_SWAP_TOKEN_CONTRACT_ADDRESSES,
   18,
-  "saddleD4",
-  "saddled4",
-  "Saddle alUSD/FEI/FRAX/LUSD",
+  "DynamicStableswapD4",
+  "DynamicStableswapd4",
+  "DynamicStableswap alUSD/FEI/FRAX/LUSD",
   false,
   true,
 )
@@ -2280,7 +2280,7 @@ export const SWAP_CONTRACT_GAS_ESTIMATES_MAP = {
   [SWAP_TYPES.TOKEN_TO_TOKEN]: BigNumber.from("2000000"), // 1,676,837
   [SWAP_TYPES.TOKEN_TO_SYNTH]: BigNumber.from("2000000"), // 1,655,502
   [SWAP_TYPES.SYNTH_TO_TOKEN]: BigNumber.from("1500000"), // 1,153,654
-  [SWAP_TYPES.SYNTH_TO_SYNTH]: BigNumber.from("700000"), // 681,128 // TODO: https://github.com/saddle-finance/saddle-frontend/issues/471
+  [SWAP_TYPES.SYNTH_TO_SYNTH]: BigNumber.from("700000"), // 681,128 // TODO: https://github.com/DynamicStableswap-finance/DynamicStableswap-frontend/issues/471
   addLiquidity: BigNumber.from("400000"), // 386,555
   removeLiquidityImbalance: BigNumber.from("350000"), // 318,231
   removeLiquidityOneToken: BigNumber.from("250000"), // 232,947
@@ -2349,7 +2349,7 @@ export const SYNTHETIX_TOKENS: { [chainId in ChainId]?: string[] } = {
   ],
 }
 
-// "SADDLE" in bytes32 form
+// "DynamicStableswap" in bytes32 form
 export const SYNTH_TRACKING_ID =
   "0x534144444c450000000000000000000000000000000000000000000000000000"
 

@@ -165,25 +165,27 @@ describe("calculatePrice", () => {
 })
 
 describe("getTokenIconPath", () => {
-  it("correctly retrieves icon path for non-saddle tokens", () => {
+  it("correctly retrieves icon path for non-DynamicStableswap tokens", () => {
     Object.keys({ BTC: { address: "0x" } }).forEach((tokenSymbol) => {
       const castedSymbol = <string>tokenSymbol
-      if (!castedSymbol.toLowerCase().includes("saddle")) {
+      if (!castedSymbol.toLowerCase().includes("DynamicStableswap")) {
         expect(getTokenIconPath(castedSymbol)).toEqual(
           `http://localhost/static/icons/svg/${castedSymbol.toLowerCase()}.svg`,
         )
       }
     })
   })
-  it("correctly retrieves icon path for saddle tokens", () => {
-    Object.keys({ "saddle-lp": { address: "0x" } }).forEach((tokenSymbol) => {
-      const castedSymbol = <string>tokenSymbol
-      if (castedSymbol.toLowerCase().includes("saddle")) {
-        expect(getTokenIconPath(castedSymbol)).toEqual(
-          `http://localhost/static/icons/svg/saddle_lp_token.svg`,
-        )
-      }
-    })
+  it("correctly retrieves icon path for DynamicStableswap tokens", () => {
+    Object.keys({ "DynamicStableswap-lp": { address: "0x" } }).forEach(
+      (tokenSymbol) => {
+        const castedSymbol = <string>tokenSymbol
+        if (castedSymbol.toLowerCase().includes("DynamicStableswap")) {
+          expect(getTokenIconPath(castedSymbol)).toEqual(
+            `http://localhost/static/icons/svg/DynamicStableswap_lp_token.svg`,
+          )
+        }
+      },
+    )
   })
 })
 
@@ -206,12 +208,12 @@ describe("createMultiCallContrat", () => {
 describe("generateSnapshotVoteLink", () => {
   it("correctly generates a snapshot link from id", () => {
     const id = "0x0000000000000000000000000000000000000000"
-    const expectedLink = `https://snapshot.org/#/saddlefinance.eth/proposal/${id}`
+    const expectedLink = `https://snapshot.org/#/DynamicStableswapfinance.eth/proposal/${id}`
     expect(generateSnapshotVoteLink(id)).toEqual(expectedLink)
   })
 
   it("returns link to all proposals if id is not present", () => {
-    const expectedLink = `https://snapshot.org/#/saddlefinance.eth`
+    const expectedLink = `https://snapshot.org/#/DynamicStableswapfinance.eth`
     expect(generateSnapshotVoteLink()).toEqual(expectedLink)
   })
 })

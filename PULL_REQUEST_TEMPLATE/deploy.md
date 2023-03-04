@@ -1,4 +1,4 @@
-# Saddle UI/Front End Pull Request Template
+# DynamicStableswap UI/Front End Pull Request Template
 
 ## Description
 

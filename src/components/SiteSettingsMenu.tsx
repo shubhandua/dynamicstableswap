@@ -25,7 +25,7 @@ import React, { ReactElement, useState } from "react"
 
 import CheckIcon from "@mui/icons-material/Check"
 import { IS_DEVELOPMENT } from "../utils/environment"
-import { ReactComponent as SaddleLogo } from "../assets/icons/logo.svg"
+import { ReactComponent as DynamicStableswapLogo } from "../assets/icons/logo.svg"
 import { extractAddEthereumChainArgs } from "../utils"
 import { useActiveWeb3React } from "../hooks"
 import useAddTokenToMetamask from "../hooks/useAddTokenToMetamask"
@@ -84,7 +84,8 @@ function AddTokenSection(): ReactElement | null {
 
   return canAdd ? (
     <MenuItem onClick={() => addToken()}>
-      <span>{t("addSDL")}</span> <SaddleLogo height={24} width={24} />
+      <span>{t("addSDL")}</span>{" "}
+      <DynamicStableswapLogo height={24} width={24} />
     </MenuItem>
   ) : null
 }

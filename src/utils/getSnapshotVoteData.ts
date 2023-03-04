@@ -23,7 +23,7 @@ export default function getSnapshotVoteData(
       first: 20,
       skip: 0,
       where: {
-        space_in: ["saddlefinance.eth"],
+        space_in: ["DynamicStableswapfinance.eth"],
       },
       orderBy: "created",
       orderDirection: desc

@@ -36,7 +36,7 @@ const createTestPool = (
     poolAddress: `0x${poolName}`,
     typeOfAsset,
     targetAddress: null,
-    isSaddleApproved: true,
+    isDynamicStableswapApproved: true,
     isRemoved: false,
     isGuarded: false,
     isPaused: false,

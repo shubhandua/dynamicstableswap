@@ -78,5 +78,5 @@ export const uauth = new UAuthConnector({
 
 export const walletlink = new WalletLinkConnector({
   url: NETWORK_URL,
-  appName: "Saddle",
+  appName: "DynamicStableswap",
 })

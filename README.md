@@ -1,12 +1,12 @@
-# saddle-frontend
+# DynamicStableswap-frontend
 
-[![CI](https://github.com/saddle-finance/saddle-frontend/workflows/CI/badge.svg)](https://github.com/saddle-finance/saddle-frontend/actions?query=workflow%3ACI)
+[![CI](https://github.com/DynamicStableswap-finance/DynamicStableswap-frontend/workflows/CI/badge.svg)](https://github.com/DynamicStableswap-finance/DynamicStableswap-frontend/actions?query=workflow%3ACI)
 
-An open source UI for Saddle 🤠
+An open source UI for DynamicStableswap 🤠
 
 The UI is deployed on IPFS and accessible at
-[saddle.exchange](https://saddle.exchange/#/) or
-[saddlefinance.eth.link](https://saddlefinance.eth.link/#/).
+[DynamicStableswap.exchange](https://DynamicStableswap.exchange/#/) or
+[DynamicStableswapfinance.eth.link](https://DynamicStableswapfinance.eth.link/#/).
 
 ## Installation
 

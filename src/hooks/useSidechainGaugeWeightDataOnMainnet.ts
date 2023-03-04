@@ -155,7 +155,7 @@ export const useSidechainGaugeWeightDataOnMainnet =
                     sidechainGaugesRelativeWeights[chainIdIndex][index],
                   isKilled: sidechainGaugesKilledStatuses[chainIdIndex][index],
                   displayName: `${ChainId[chainId]}_${gaugeName
-                    .replace("Saddle ", "")
+                    .replace("DynamicStableswap ", "")
                     .replace(" Root Gauge", "-gauge")}`,
                 }
               })

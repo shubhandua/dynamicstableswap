@@ -156,7 +156,9 @@ function Pools(): ReactElement | null {
               ),
           )
           .filter((basicPool) =>
-            communityPoolsFilter ? !basicPool.isSaddleApproved : basicPool,
+            communityPoolsFilter
+              ? !basicPool.isDynamicStableswapApproved
+              : basicPool,
           )
           .filter(
             (basicPool) =>

@@ -53,7 +53,7 @@ export default function TokensProvider({
       const ethCallProvider = await getMulticallProvider(library, chainId)
       const lpTokens = new Set()
       const tokenType: Partial<{ [tokenAddress: string]: PoolTypes }> = {}
-      const saddleApprovedPoolTokens = new Set()
+      const DynamicStableswapApprovedPoolTokens = new Set()
       const targetTokenAddresses = new Set(
         Object.values(basicPools)
           .map((pool) => {
@@ -63,9 +63,9 @@ export default function TokensProvider({
               ...(pool.underlyingTokens || []),
               pool.lpToken,
             ]
-            if (pool.isSaddleApproved) {
+            if (pool.isDynamicStableswapApproved) {
               tokensInPool.forEach((token) => {
-                saddleApprovedPoolTokens.add(token)
+                DynamicStableswapApprovedPoolTokens.add(token)
               })
             }
             Object.assign(
@@ -140,7 +140,7 @@ export default function TokensProvider({
           tokenType[address] ?? PoolTypes.OTHER
         ;(tokenInfos[address] as BasicToken).isOnTokenLists =
           additionalSdlApprovedAddrsSet.has(String(address)) ||
-          saddleApprovedPoolTokens.has(String(address))
+          DynamicStableswapApprovedPoolTokens.has(String(address))
       })
       setTokens(tokenInfos)
     }

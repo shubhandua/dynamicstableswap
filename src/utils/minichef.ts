@@ -77,12 +77,12 @@ export async function getMinichefRewardsPoolsData(
     ) as MulticallContract<MiniChef>
 
     // Fetch SDL distribution amounts
-    const [saddlePerSecond, totalAllocPoint, sdlAddress] =
+    const [DynamicStableswapPerSecond, totalAllocPoint, sdlAddress] =
       await ethCallProvider.tryEach(
         [
-          minichefContract.saddlePerSecond(),
+          minichefContract.DynamicStableswapPerSecond(),
           minichefContract.totalAllocPoint(),
-          minichefContract.SADDLE(),
+          minichefContract.DynamicStableswap(),
         ],
         [false, false, false],
       )
@@ -122,8 +122,7 @@ export async function getMinichefRewardsPoolsData(
           const pctOfSupplyStaked = lpTokenSupply.gt(Zero)
             ? miniChefLpBalance.mul(BN_1E18).div(lpTokenSupply)
             : Zero
-          const sdlPerDay = saddlePerSecond
-            .mul(oneDaySecs)
+          const sdlPerDay = DynamicStableswapPerSecond.mul(oneDaySecs)
             .mul(poolInfo.allocPoint)
             .div(totalAllocPoint)
           return {
@@ -257,7 +256,7 @@ export async function getMinichefRewardsUserData(
     )
     const pendingSDLAmountsPromise = ethCallProvider.all(
       poolsWithPids.map(({ miniChefRewardsPid: pid }) =>
-        minichefContract.pendingSaddle(pid, account),
+        minichefContract.pendingDynamicStableswap(pid, account),
       ),
     )
     // TODO rewarderAddresses are already fetched in getMinichefRewardsRewardersData and could be resused

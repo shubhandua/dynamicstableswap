@@ -167,7 +167,7 @@ const DepositPage = (props: Props): ReactElement => {
           <Typography>
             {t("incentivesMigratedFromKeepToT")} &lt;
             <Link
-              href="https://forum.keep.network/t/repurpose-saddle-tbtc-pool-liquidity-incentives-and-move-incentives-to-t/404"
+              href="https://forum.keep.network/t/repurpose-DynamicStableswap-tbtc-pool-liquidity-incentives-and-move-incentives-to-t/404"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -300,7 +300,7 @@ const DepositPage = (props: Props): ReactElement => {
                   {poolData?.aprs?.threshold?.apr.gt(Zero) && (
                     <div>
                       <a
-                        href="https://docs.saddle.finance/faq#what-are-saddles-liquidity-provider-rewards"
+                        href="https://docs.DynamicStableswap.finance/faq#what-are-DynamicStableswaps-liquidity-provider-rewards"
                         target="_blank"
                         rel="noopener noreferrer"
                       >

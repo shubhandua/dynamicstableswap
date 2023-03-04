@@ -63,12 +63,12 @@ function ReviewWithdraw({ onClose, onConfirm, data }: Props): ReactElement {
       <WithdrawInfoItem>
         <Box display="flex" alignItems="center">
           <TokenIcon
-            symbol={"saddle_lp_token.svg"}
+            symbol={"DynamicStableswap_lp_token.svg"}
             alt="icon"
             width={20}
             height={20}
           />
-          <Typography ml={0.5}>SaddleUSD-V2</Typography>
+          <Typography ml={0.5}>DynamicStableswapUSD-V2</Typography>
         </Box>
         <Typography variant="body1">
           {formatUnits(data.withdrawLPTokenAmount)}

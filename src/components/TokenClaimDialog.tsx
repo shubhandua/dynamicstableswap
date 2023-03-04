@@ -221,7 +221,7 @@ export default function TokenClaimDialog({
                 yet claimable on this chain. We display the amount that will be
                 claimable once SDL is available on this network. See
                 <Link
-                  href="https://docs.saddle.finance/saddle-faq#why-cant-i-claim-my-sdl-on-arbitrum"
+                  href="https://docs.DynamicStableswap.finance/DynamicStableswap-faq#why-cant-i-claim-my-sdl-on-arbitrum"
                   color="secondary"
                   target="_blank"
                 >
@@ -310,11 +310,11 @@ export default function TokenClaimDialog({
         </List>
 
         <Typography my={3}>
-          <Trans i18nKey="saddleTokenInfo" t={t}>
-            SDL token is launched by Saddle Finance. Read more about token
-            distribution{" "}
+          <Trans i18nKey="DynamicStableswapTokenInfo" t={t}>
+            SDL token is launched by DynamicStableswap Finance. Read more about
+            token distribution{" "}
             <Link
-              href="https://blog.saddle.finance/introducing-sdl"
+              href="https://blog.DynamicStableswap.finance/introducing-sdl"
               target="_blank"
               rel="noreferrer"
               style={{ textDecoration: "underline" }}

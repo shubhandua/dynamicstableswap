@@ -47,7 +47,7 @@ type SharedSwapData = {
   isGuarded: boolean
   isPaused: boolean
   isRemoved: boolean
-  isSaddleApproved: boolean
+  isDynamicStableswapApproved: boolean
   isSynthetic: boolean
   isWithdrawFeeAbi: boolean
   lpToken: string
@@ -276,7 +276,7 @@ export async function getPoolsDataFromRegistry(
         isGuarded: poolData.isGuarded,
         isPaused,
         isRemoved: poolData.isRemoved,
-        isSaddleApproved: poolData.isSaddleApproved,
+        isDynamicStableswapApproved: poolData.isDynamicStableswapApproved,
         isSynthetic,
         isWithdrawFeeAbi,
         lpToken: poolData.lpToken.toLowerCase(),
@@ -358,7 +358,7 @@ export async function getSwapInfo(
      * POOLS_MAP has an idiom that `address` for metapools refers to the metaswapDeposit address,
      * and `metaswapAddress` refers to the actual metaswap contract address.
      * Similarly, `tokens` for metapools refers to the metaswapDeposit tokens (eg [susd, usdc, dai, usdt]),
-     * and `underlyingTokens` refers to the metaswap tokens (eg [susd, saddleUsdLpToken]).
+     * and `underlyingTokens` refers to the metaswap tokens (eg [susd, DynamicStableswapUsdLpToken]).
      *
      * This function corrects the addresses (eg poolAddress -> metaswapContract, metaSwapDepositAddress -> metaswapDepositContract)
      * and also corrects the tokens (eg tokens -> [t1, lpToken], underlyingTokens -> [t1, t2, t3, t4]).
@@ -426,7 +426,7 @@ export async function getSwapInfo(
       underlyingTokens,
       basePoolAddress,
       metaSwapDepositAddress,
-      isSaddleApproved: true,
+      isDynamicStableswapApproved: true,
       isRemoved: false,
       isGuarded,
       // Non-Registry values

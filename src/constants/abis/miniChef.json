@@ -3,7 +3,7 @@
     "inputs": [
       {
         "internalType": "contract IERC20",
-        "name": "_saddle",
+        "name": "_DynamicStableswap",
         "type": "address"
       }
     ],
@@ -134,11 +134,11 @@
       {
         "indexed": false,
         "internalType": "uint256",
-        "name": "saddlePerSecond",
+        "name": "DynamicStableswapPerSecond",
         "type": "uint256"
       }
     ],
-    "name": "LogSaddlePerSecond",
+    "name": "LogDynamicStableswapPerSecond",
     "type": "event"
   },
   {
@@ -196,7 +196,7 @@
       {
         "indexed": false,
         "internalType": "uint256",
-        "name": "accSaddlePerShare",
+        "name": "accDynamicStableswapPerShare",
         "type": "uint256"
       }
     ],
@@ -255,7 +255,7 @@
   },
   {
     "inputs": [],
-    "name": "SADDLE",
+    "name": "DynamicStableswap",
     "outputs": [
       {
         "internalType": "contract IERC20",
@@ -455,7 +455,7 @@
         "type": "address"
       }
     ],
-    "name": "pendingSaddle",
+    "name": "pendingDynamicStableswap",
     "outputs": [
       {
         "internalType": "uint256",
@@ -526,7 +526,7 @@
     "outputs": [
       {
         "internalType": "uint128",
-        "name": "accSaddlePerShare",
+        "name": "accDynamicStableswapPerShare",
         "type": "uint128"
       },
       {
@@ -577,7 +577,7 @@
   },
   {
     "inputs": [],
-    "name": "saddlePerSecond",
+    "name": "DynamicStableswapPerSecond",
     "outputs": [
       {
         "internalType": "uint256",
@@ -620,11 +620,11 @@
     "inputs": [
       {
         "internalType": "uint256",
-        "name": "_saddlePerSecond",
+        "name": "_DynamicStableswapPerSecond",
         "type": "uint256"
       }
     ],
-    "name": "setSaddlePerSecond",
+    "name": "setDynamicStableswapPerSecond",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"
@@ -679,7 +679,7 @@
         "components": [
           {
             "internalType": "uint128",
-            "name": "accSaddlePerShare",
+            "name": "accDynamicStableswapPerShare",
             "type": "uint128"
           },
           {

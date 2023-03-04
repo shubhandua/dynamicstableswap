@@ -1,6 +1,6 @@
 {
-  "name": "saddle-frontend",
-  "description": "The frontend for saddle.finance 🤠",
+  "name": "DynamicStableswap-frontend",
+  "description": "The frontend for DynamicStableswap.finance 🤠",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -129,7 +129,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thesis/saddle-frontend.git"
+    "url": "git+https://github.com/thesis/DynamicStableswap-frontend.git"
   },
   "keywords": [
     "cryptocurrency",

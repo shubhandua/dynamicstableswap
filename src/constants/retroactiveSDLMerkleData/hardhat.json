@@ -1,6 +1,6 @@
 {
   "__note": {
-    "source": "https://github.com/saddle-finance/saddle-token/blob/deploySDL/test/merkleTree.json"
+    "source": "https://github.com/DynamicStableswap-finance/DynamicStableswap-token/blob/deploySDL/test/merkleTree.json"
   },
   "merkleRoot": "0xd6a1b52194896b83e8872ba351a81ad70f78258c4f9575c1f4c6d24090b05a5e",
   "recipients": {

@@ -184,11 +184,11 @@ function VestingClaim(): ReactElement {
         )}
 
         <Typography mb={3}>
-          <Trans i18nKey="saddleTokenInfo" t={t}>
-            SDL token is launched by Saddle Finance. Read more about token
-            distribution{" "}
+          <Trans i18nKey="DynamicStableswapTokenInfo" t={t}>
+            SDL token is launched by DynamicStableswap Finance. Read more about
+            token distribution{" "}
             <Link
-              href="https://blog.saddle.finance/introducing-sdl"
+              href="https://blog.DynamicStableswap.finance/introducing-sdl"
               target="_blank"
               rel="noreferrer"
               style={{ textDecoration: "underline" }}

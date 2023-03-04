@@ -281,7 +281,7 @@ const SwapPage = (props: Props): ReactElement => {
               </Box>
               {isVirtualSwap && (
                 <Link
-                  href="https://docs.saddle.finance/saddle-faq#what-is-virtual-swap"
+                  href="https://docs.DynamicStableswap.finance/DynamicStableswap-faq#what-is-virtual-swap"
                   style={{ textDecoration: "underline" }}
                   target="_blank"
                   rel="noreferrer"
@@ -312,7 +312,7 @@ const SwapPage = (props: Props): ReactElement => {
             <Typography ml={1}>
               {t("crossAssetSwapsUseVirtualSwaps")}
               <Link
-                href="https://docs.saddle.finance/saddle-faq#what-is-virtual-swap"
+                href="https://docs.DynamicStableswap.finance/DynamicStableswap-faq#what-is-virtual-swap"
                 target="_blank"
                 rel="noreferrer"
                 color="inherit"

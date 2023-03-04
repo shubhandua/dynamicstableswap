@@ -28,7 +28,7 @@ export function useRetroMerkleData(): MerkleState {
       if (IS_PRODUCTION) {
         // TODO: do network stuff
         const resp = await fetch(
-          `https://ipfs.saddle.exchange/token-merkle-proofs/${account}`,
+          `https://ipfs.DynamicStableswap.exchange/token-merkle-proofs/${account}`,
         )
         if (resp.ok) {
           void resp.json().then((userData: AccountMerkleData) => {

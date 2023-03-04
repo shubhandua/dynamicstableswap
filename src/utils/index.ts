@@ -448,8 +448,8 @@ export async function getMulticallProvider(
  * @returns the token icon path within the public assets directory
  */
 export function getTokenIconPath(tokenSymbol: string): string {
-  const iconName = tokenSymbol.toLowerCase().includes("saddle")
-    ? "saddle_lp_token"
+  const iconName = tokenSymbol.toLowerCase().includes("DynamicStableswap")
+    ? "DynamicStableswap_lp_token"
     : tokenSymbol.toLowerCase()
   const img = new Image()
   img.src = `/static/icons/svg/${iconName}.svg`
@@ -482,14 +482,15 @@ export function createMultiCallContract<T>(
  * @returns the snapshot URL
  */
 export function generateSnapshotVoteLink(id?: string): string {
-  if (id) return `https://snapshot.org/#/saddlefinance.eth/proposal/${id}`
-  return "https://snapshot.org/#/saddlefinance.eth"
+  if (id)
+    return `https://snapshot.org/#/DynamicStableswapfinance.eth/proposal/${id}`
+  return "https://snapshot.org/#/DynamicStableswapfinance.eth"
 }
 
 /**
  * calculate effective working LP amount that gets applied when user deposits into a gauge with given total LP deposit amount
  * You can compare userLPAmount and the returned value to calculate boost ratio
- * reference https://www.notion.so/saddle-finance/Gauge-Data-1919b6d6317245baa5f58cc25b17ed98#d2025bd485a641fca2730ac617dad82b
+ * reference https://www.notion.so/DynamicStableswap-finance/Gauge-Data-1919b6d6317245baa5f58cc25b17ed98#d2025bd485a641fca2730ac617dad82b
  *
  * @param userLPAmount user's lp amount
  * @param totalLPDeposit total lp deposit in the gauge contract

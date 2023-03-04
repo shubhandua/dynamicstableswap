@@ -4,7 +4,7 @@ import { ChainId } from "../constants/networks"
 import { useCallback } from "react"
 import { useQuery } from "@tanstack/react-query"
 
-const swapStatsURI = "https://ipfs.saddle.exchange/swap-stats.json"
+const swapStatsURI = "https://ipfs.DynamicStableswap.exchange/swap-stats.json"
 
 type PoolStats = {
   oneDayVolume: string
