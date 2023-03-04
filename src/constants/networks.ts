@@ -15,7 +15,12 @@ export enum ChainId {
   EVMOS_TESTNET = 9000,
   KAVA_TESTNET = 2221,
   KAVA = 2222,
-  AURORA = 1313161554,
+  AURORA = 1313161555,
+  GOERLI = 5,
+  MANTLE = 5001,
+  NEON = 245022926,
+  SCROLL = 534353,
+  SEPOLIA = 11155111,
 }
 
 export const NETWORK_LABEL: Partial<Record<ChainId, string>> = {
@@ -29,7 +34,12 @@ export const NETWORK_LABEL: Partial<Record<ChainId, string>> = {
   [ChainId.KAVA_TESTNET]: "Kava Testnet",
   [ChainId.KAVA]: "Kava",
   [ChainId.HARDHAT]: "Hardhat 👷🏼‍♂️",
-  [ChainId.AURORA]: "Aurora",
+  [ChainId.AURORA]: "Aurora testnet",
+  [ChainId.GOERLI]: "Goerli",
+  [ChainId.MANTLE]: "Mantle",
+  [ChainId.NEON]: "Neon EVM",
+  [ChainId.SCROLL]: "Scroll L2 Alpha",
+  [ChainId.SEPOLIA]: "Sepolia",
 }
 
 // TODO: figure out better way of representing non-erc20 native tokens
@@ -46,6 +56,11 @@ export const NETWORK_NATIVE_TOKENS: Record<ChainId, string> = {
   [ChainId.HARDHAT]: "ETH",
   [ChainId.TEST_SIDE_CHAIN]: "ETH",
   [ChainId.AURORA]: "ETH",
+  [ChainId.GOERLI]: "ETH",
+  [ChainId.MANTLE]: "MNTL",
+  [ChainId.NEON]: "NEON",
+  [ChainId.SCROLL]: "ETH",
+  [ChainId.SEPOLIA]: "ETH",
 }
 export const COINGECKO_PLATFORM_ID: Record<ChainId, string | null> = {
   [ChainId.MAINNET]: "ethereum",
@@ -60,6 +75,12 @@ export const COINGECKO_PLATFORM_ID: Record<ChainId, string | null> = {
   [ChainId.HARDHAT]: null,
   [ChainId.TEST_SIDE_CHAIN]: null,
   [ChainId.AURORA]: "aurora",
+  [ChainId.AURORA]: null,
+  [ChainId.GOERLI]: null,
+  [ChainId.MANTLE]: null,
+  [ChainId.NEON]: null,
+  [ChainId.SCROLL]: null,
+  [ChainId.SEPOLIA]: null,
 }
 
 export type SupportedNetwork = {
@@ -138,11 +159,66 @@ export const SUPPORTED_NETWORKS: SupportedNetworks = {
     blockExplorerUrls: ["https://explorer.kava.io"],
   },
   [ChainId.AURORA]: {
-    chainId: hexlify(1313161554),
-    chainName: "Aurora Mainnet",
+    chainId: "0x4E454153",
+    chainName: "Aurora Testnet",
     nativeCurrency: nativeCurrencyEth,
-    rpcUrls: ["https://mainnet.aurora.dev"],
-    blockExplorerUrls: ["https://explorer.mainnet.aurora.dev"],
+    rpcUrls: ["https://testnet.aurora.dev"],
+    blockExplorerUrls: ["https://explorer.testnet.aurora.dev"],
+  },
+  [ChainId.GOERLI]: {
+    chainId: "0x5",
+    chainName: "goerli",
+    nativeCurrency: {
+      name: "ETH",
+      symbol: "eth",
+      decimals: 18,
+    },
+    rpcUrls: ["https://goerli.infura.io/v3/e1d8c78f9f6f487f935f7a41e7e9d33a"],
+    blockExplorerUrls: ["https://evm.evmos.dev"],
+  },
+  [ChainId.MANTLE]: {
+    chainId: "0x1389",
+    chainName: "Mantle Testnet",
+    nativeCurrency: {
+      name: "ETH",
+      symbol: "eth",
+      decimals: 18,
+    },
+    rpcUrls: ["https://rpc.testnet.mantle.xyz"],
+    blockExplorerUrls: ["https://evm.evmos.dev"],
+  },
+  [ChainId.NEON]: {
+    chainId: "0xE9AC0CE",
+    chainName: "Neon EVM Devnet",
+    nativeCurrency: {
+      name: "NEON",
+      symbol: "NEON",
+      decimals: 18,
+    },
+    rpcUrls: ["https://devnet.neonevm.org"],
+    blockExplorerUrls: ["https://evm.evmos.dev"],
+  },
+  [ChainId.SCROLL]: {
+    chainId: "0x82751",
+    chainName: "Scroll L2 Alpha",
+    nativeCurrency: {
+      name: "ETH",
+      symbol: "eth",
+      decimals: 18,
+    },
+    rpcUrls: ["https://alpha-rpc.scroll.io/l2"],
+    blockExplorerUrls: ["https://evm.evmos.dev"],
+  },
+  [ChainId.SEPOLIA]: {
+    chainId: "0xAA36A7",
+    chainName: "Sepolia",
+    nativeCurrency: {
+      name: "ETH",
+      symbol: "eth",
+      decimals: 18,
+    },
+    rpcUrls: ["https://sepolia.infura.io/v3/e1d8c78f9f6f487f935f7a41e7e9d33a"],
+    blockExplorerUrls: ["https://evm.evmos.dev"],
   },
 }
 
